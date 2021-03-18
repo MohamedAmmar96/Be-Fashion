@@ -54,7 +54,7 @@ $(document).ready(function() {
         loop: true,
         autoplay: true,
         autoplayTimeout: 4000,
-        margin: 20,
+        margin: 30,
         // stagePadding: 5,
         rtl: true,
         navText: ["<span class='lnr lnr-chevron-right'></span>", "<span class='lnr lnr-chevron-left'></span>"],

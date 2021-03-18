@@ -1110,6 +1110,7 @@
             justify-content: center;
             align-items: center;
             text-align: center;
+            cursor: pointer;
         }
         
         .women-back-img,
@@ -1148,8 +1149,8 @@
             transition: all 0.4s ease-in-out;
         }
         
-        .women-name-box .women-name:hover,
-        .men-name-box .men-name:hover {
+        .women-name-box:hover .women-name,
+        .men-name-box:hover .men-name {
             color: var(--main);
         }
         /***************************** Brands Section Start ***************************/

@@ -86,7 +86,7 @@
             transform: translateY(-50%);
             width: 2px;
             height: 100%;
-            background-color: #797979;
+            background-color: #dadada;
         }
         
         html[dir=rtl] .lang::after {
@@ -179,9 +179,16 @@
             color: var(--main);
         }
         
-        .currency-img {
+        .lang-img {
             margin-inline-end: 5px;
         }
+        /* html[dir=rtl] .lang-img {
+            width: 30%;
+        }
+        
+        html[dir=rtl] .flag {
+            width: 100%;
+        } */
         
         .lang:hover .lang-list,
         .currency:hover .currency-list {
@@ -194,7 +201,7 @@
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
-            padding: 20px 0;
+            padding: 12px 0;
         }
         
         .hidden-terms {
@@ -218,7 +225,7 @@
             font-weight: 400;
             color: var(--main);
             margin-top: 0;
-            margin-bottom: 0;
+            margin-bottom: 120px;
             margin-inline-start: 70px;
             padding-top: 10px;
             text-transform: capitalize;
@@ -319,7 +326,7 @@
         .search-input {
             width: 100%;
             height: 50px;
-            padding-inline-start: 30px;
+            padding-inline-start: 20px;
             border: 2px solid transparent;
             outline: none;
             font-size: 16px;
@@ -335,7 +342,7 @@
         .search-input::placeholder {
             font-size: 15px;
             font-weight: 500;
-            color: var(--main);
+            color: #9e9e9e;
             opacity: 0.8;
         }
         
@@ -439,7 +446,7 @@
             height: 100%;
             background: var(--white);
             overflow: auto;
-            padding: 70px 50px 0 60px;
+            padding: 20px;
             z-index: 99999;
             transition: all 0.4s ease-in-out;
             /* display: none; */
@@ -457,8 +464,8 @@
         .mo-nav .close {
             display: block;
             position: absolute;
-            top: 70px;
-            right: 60px;
+            top: 20px;
+            right: 30px;
             border: none;
             outline: none;
             background-color: transparent;
@@ -472,7 +479,7 @@
         
         html[dir=rtl] .mo-nav .close {
             right: auto;
-            left: 60px;
+            left: 30px;
         }
         
         .mo-nav .close:hover {
@@ -480,7 +487,7 @@
         }
         
         .nav-list {
-            padding-top: 60px;
+            padding-top: 50px;
         }
         
         .nav-li {
@@ -502,7 +509,7 @@
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
-            font-size: 23px;
+            font-size: 20px;
             font-weight: 400;
             transition: all 0.4s ease-in-out;
         }
@@ -514,7 +521,7 @@
         .sub-menu .nav-link::after {
             content: "\e874";
             font-family: "Linearicons-Free";
-            font-size: 18px;
+            font-size: 14px;
         }
         
         .sub-list {
@@ -705,7 +712,7 @@
             color: var(--white);
             text-decoration: none;
             text-transform: uppercase;
-            font-size: 28px;
+            font-size: 24px;
             font-weight: 400;
             white-space: pre;
             line-height: 1;
@@ -837,10 +844,10 @@
         .item-content .item-name {
             display: block;
             text-align: center;
-            margin-bottom: 40px;
+            margin-bottom: 10px;
             color: var(--black);
             text-decoration: none;
-            font-size: 18px;
+            font-size: 15px;
             font-weight: 400;
             white-space: nowrap;
             overflow: hidden;
@@ -861,7 +868,7 @@
         
         .last-price {
             color: #757575;
-            font-size: 24px;
+            font-size: 20px;
             font-weight: 400;
             text-decoration: line-through;
             margin-inline-end: 15px;
@@ -869,8 +876,8 @@
         
         .first-price {
             color: var(--main);
-            font-size: 24px;
-            font-weight: 400;
+            font-size: 20px;
+            font-weight: 600;
         }
         
         .new-collection .view-more {
@@ -884,7 +891,7 @@
             height: 45px;
             color: var(--white);
             text-decoration: none;
-            font-size: 20px;
+            font-size: 14px;
             font-weight: 400;
             background-color: var(--black);
             transition: all 0.4s ease-in-out;
@@ -1189,7 +1196,7 @@
         
         .newsletter {
             background: url(../images/newsletter/back.png) no-repeat center;
-            background-size: contain;
+            background-size: cover;
             position: relative;
             transform: translateY(-50%);
             padding: 30px;
@@ -1206,7 +1213,7 @@
             margin-top: 0;
             margin-bottom: 0;
             color: var(--white);
-            font-size: 19px;
+            font-size: 17px;
             font-weight: 400;
             /* margin-inline-end: 40px; */
         }
@@ -1216,8 +1223,9 @@
         }
         
         .newsletter-title .big-news {
-            font-size: 31px;
-            font-weight: 400;
+            font-size: 28px;
+            font-weight: 500;
+            margin-inline-end: 14px;
             text-transform: uppercase;
         }
         
@@ -1258,7 +1266,7 @@
             background-color: var(--black);
             color: var(--white);
             font-size: 19px;
-            font-weight: 400;
+            font-weight: 500;
             transition: all 0.4s ease-in-out;
         }
         
@@ -1284,14 +1292,14 @@
         
         .footer-col .footer-heading {
             color: var(--main);
-            font-size: 19px;
-            font-weight: 400;
+            font-size: 16px;
+            font-weight: 600;
             margin-top: 0;
             margin-bottom: 40px;
         }
         
         .footer-heading .footer-link {
-            color: var(--main);
+            color: var(--white);
             text-decoration: none;
             display: flex;
             flex-direction: row;
@@ -1304,7 +1312,7 @@
         }
         
         .info-list .info-list-li {
-            margin-bottom: 20px;
+            margin-bottom: 14px;
         }
         
         .info-list .info-list-li:last-child {
@@ -1347,10 +1355,10 @@
         
         .first-p,
         .last-p {
-            font-size: 12px;
+            font-size: 14px;
             font-weight: 400;
             margin-bottom: 0;
-            color: #757575;
+            color: var(--black);
         }
         
         .first-p {
@@ -1377,7 +1385,7 @@
             cursor: pointer;
             display: none;
             z-index: 999;
-            background-color: rgba(0, 0, 0, 0.7);
+            background-color: rgba(0, 0, 0, 0.90);
         }
         
         .overlay-box2 {
@@ -1606,13 +1614,6 @@
                 width: 115px;
                 font-size: 15px;
             } */
-            .item-content .item-name {
-                margin-bottom: 20px;
-            }
-            .first-price,
-            .last-price {
-                font-size: 21px;
-            }
             .last-price {
                 margin-inline-end: 5px;
             }
@@ -1822,6 +1823,18 @@
         /*********************  Medium Screens ********************/
         
         @media (min-width: 992px)and (max-width: 1199px) {
+            .currency-list {
+                right: 70%;
+            }
+            html[dir=rtl] .currency-list {
+                right: 30%;
+            }
+            .currency-list::before {
+                right: 38%;
+            }
+            html[dir=rtl] .currency-list::before {
+                right: 60%;
+            }
             .logo-box {
                 width: 80px;
             }
@@ -1833,9 +1846,6 @@
             }
             .col-md-4:nth-child(2) .cat:first-child {
                 margin-bottom: 25px;
-            }
-            .cat .cat-name {
-                font-size: 24px;
             }
             .first-price,
             .last-price {
@@ -1854,9 +1864,6 @@
             }
             .footer-p {
                 width: 100%;
-            }
-            .footer-col .footer-heading {
-                font-size: 17px;
             }
         }
         

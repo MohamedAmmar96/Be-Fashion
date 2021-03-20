@@ -106,10 +106,6 @@
             transition: all 0.4s ease-in-out;
         }
         
-        .currency-name {
-            padding-top: 3px;
-        }
-        
         .lang:hover .lang-name,
         .currency:hover .currency-name {
             color: var(--main);
